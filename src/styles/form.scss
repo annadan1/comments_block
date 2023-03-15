@@ -1,0 +1,70 @@
+@import "_variables.scss";
+
+form {
+  margin: 20px 0;
+  padding: 0 20px;
+  &:after {
+    content: "";
+    display: block;
+    height: 0.5px;
+    background: white;
+    opacity: 0.5;
+  }
+}
+
+.container__newUserInfo {
+  display: flex;
+}
+
+.newUserInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  & img {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.conteiner_for_input {
+  width: 200px;
+  height: 50px;
+  padding: 10px 0;
+  & input {
+    width: 160px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  & .error {
+    border-color: red;
+  }
+}
+
+.message {
+  width: 100%;
+  resize: none;
+  height: 70px;
+  border-radius: 5px;
+}
+
+.arrow {
+  background: none;
+  margin: 10px;
+  padding: 0;
+  color: rgb(226, 226, 226);
+  &:hover {
+    background: none;
+    color: white;
+  }
+}
+.sendButton {
+  display: flex;
+  justify-content: flex-end;
+}
+.buttonGroup {
+  display: flex;
+  & button {
+    margin-left: 5px;
+  }
+}

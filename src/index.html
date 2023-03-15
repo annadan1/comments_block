@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__post">
+            <header class="userInfo">
+                <div class="avatar"><img src="./assets/img/avatars/avatar3242.jpg" alt="аватар"></div>
+                <div>
+                    <span class="nickname">Пепега невидимка</span>
+                    <span class="data">25 октября 2021</span>
+                </div>
+            </header>
+            <p>Это не мем, это моя жизнь!:D</p>
+            <div class="container__image">
+                <img class="image" src="./assets/img/catmemes.jpeg" alt="мем с котом">
+            </div>
+            <button type="button" class="button__forLike" value="18">
+                ♡
+                <p class="count">18</p>
+            </button>
+        </div>
+        <form>
+            <div class="container__newUserInfo">
+                <div class="newUserInfo">
+                    <button class="arrow" data-action="prev" type="button">ᐸ</button>
+                    <img class="avatar selected" src="./assets/img/avatars/new/avatar1.jpg" alt="avatar" data-value="1">
+                    <img class="avatar hidden" src="./assets/img/avatars/new/avatar2.jpg" alt="avatar" data-value="2">
+                    <img class="avatar hidden" src="./assets/img/avatars/new/avatar3.jpg" alt="avatar" data-value="3">
+                    <img class="avatar hidden" src="./assets/img/avatars/new/avatar4.jpg" alt="avatar" data-value="4">
+                    <img class="avatar hidden" src="./assets/img/avatars/new/avatar5.jpg" alt="avatar" data-value="5">
+                    <img class="avatar hidden" src="./assets/img/avatars/new/avatar6.jpg" alt="avatar" data-value="6">
+                    <img class="avatar hidden" src="./assets/img/avatars/new/avatar7.jpg" alt="avatar" data-value="7">
+                    <button class="arrow" data-action="next" type="button">ᐳ</button>
+                    <div class="conteiner_for_input">
+                        <input class="newNickname" type="text" placeholder="Ваш ник" value="">
+                        <p class="errorMessage hidden">Ваш ник должен начинаться с Пепега</p>
+                    </div>
+                </div>
+                <div class="conteiner_for_input">
+                    <input class="dateMessage" type="date" placeholder="Дата сообщения" value="">
+                </div>
+            </div>
+            <textarea class="message" type="text" placeholder="Ваше сообщение" value=""></textarea>
+            <div class="sendButton"><button type="submit" disabled>Отправить</button></div>
+        </form>
+        <div class="container__comments">
+            <div class="comment__block">
+                <div class="userInfo">
+                    <img class="avatar" src="./assets/img/avatars/avatar1409.jpg" alt="avatar">
+                    <div>
+                        <span class="nickname">Пепега игристая</span>
+                        <span class="date">26 октября 2021 3:01</span>
+                    </div>
+                </div>
+                <div class="comment">
+                    <span class="text">Ахах, моя тоже!</span>
+                    <button type="button" class="button__forLike" value="0">
+                        ♡
+                        <p class="count hidden"></p>
+                    </button>
+                </div>
+            </div>
+            <div class="comment__block">
+                <div class="userInfo">
+                    <img class="avatar" src="./assets/img/avatars/avatar2763.jpg" alt="avatar">
+                    <div>
+                        <span class="nickname">Пепега босс</span>
+                        <span class="date">28 октября 2021 10:00</span>
+                    </div>
+                </div>
+                <div class="comment">
+                    <span class="text">Почему бы просто не накормить кота?</span>
+                    <button type="button" class="button__forLike" value="3">
+                        ♡
+                        <p class="count">3</p>
+                    </button>
+                </div>
+
+            </div>
+            <div class="comment__block">
+                <div class="userInfo">
+                    <img class="avatar" src="./assets/img/avatars/avatar2954.jpg" alt="avatar">
+                    <div>
+                        <span class="nickname">Пепега - картофельная кокетка</span>
+                        <span class="date">28 октября 2021 11:50</span>
+                    </div>
+                </div>
+                <div class="comment">
+                    <span class="text">Но там и правда пустая миска...</span>
+                    <button type="button" class="button__forLike" value="1">
+                        ♡
+                        <p class="count">1</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

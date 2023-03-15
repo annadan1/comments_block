@@ -1,0 +1,69 @@
+@import "container.scss";
+@import "_variables.scss";
+@import "form.scss";
+
+body {
+  margin: 50px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $myBlack;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: white;
+  background-color: $myGrayButton;
+  margin: 20px 0;
+  border-radius: 25px;
+  padding: 15px;
+  max-width: 100px;
+  max-height: 30px;
+  display: flex;
+  align-items: center;
+  &:hover {
+    background-color: $myHoverGray;
+  }
+  &:disabled{
+    background-color: $myGrayButton;
+  }
+}
+
+.avatar {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  & img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.userInfo {
+  display: flex;
+  font-size: 16px;
+  & span {
+    display: block;
+  }
+  & .date {
+    font-size: 13px;
+    color: gray;
+  }
+}
+
+.hidden {
+  display: none;
+}
+.errorMessage {
+  font-size: 10px;
+  color: red;
+}
