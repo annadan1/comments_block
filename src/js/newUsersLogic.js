@@ -56,8 +56,11 @@ const addNewUserMessage = () => {
     });
   }
 
-  messageForm.addEventListener("keypress", (e) => {
+  messageForm.addEventListener("input", (e) => {
     currentUser.message = e.target.value;
+  });
+
+  form.addEventListener("keydown", (e) => {
     if (e.key == "Enter") {
       submit(newUserInfo, messageForm, currentUser);
     }
